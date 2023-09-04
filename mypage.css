@@ -1,0 +1,264 @@
+body{
+  font-family: sans-serif;
+  background-color:black;
+}
+
+.person{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background: white; */
+}
+
+.logo{
+    width: 400px; 
+    height: auto; 
+    margin-right: 20px;
+}
+
+.picture{
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+    border-radius: 50%;
+}
+
+nav{
+    display:flex;
+    padding: 0px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shift{
+    margin-left: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.detel{
+    margin-left: 3.5%;
+    margin-top: 10%; 
+}
+
+.detel h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+span{
+    color: blueviolet;
+}
+
+.detel p{
+    color: grey;
+    line-height: 22px;
+}
+
+.detel a{
+    background:grey;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.detel a:hover{
+  color: red;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 85px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 57%;
+    transform: translateX(-50%);
+    transition: bottom 6s, left 6s;
+}
+
+.images:hover .shape{
+    bottom: 20px;
+}
+
+.images:hover .you{
+    left: 50%;
+}
+
+.row{
+  display: flex;
+}
+
+.column{
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.card {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 10px; 
+}
+
+.card-body{
+  text-align: center;
+}
+
+.photo{
+  width: 60%;
+  height: auto; 
+  display: block;
+  margin: 10px auto;
+}
+
+#contact {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  #contact-form button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .skills {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 2px 5px white;
+  }
+  
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .stars {
+    display: flex;
+  }
+  
+  .star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin-right: 5px;
+  }
+  
+  .star.filled {
+    background-color: goldenrod;
+  }
+  
+  .okay{
+    text-align: center;
+  }
+
+  h2{
+    color: white;
+  }
+
+  p.card-text{
+    color: white;
+  }
+
+  label{
+    color: white;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .icon:hover {
+    color: blue;
+  }
+
+@media (max-width: 768px) {
+  .person {
+    height: auto;
+    padding-top: 80px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .person {
+    padding-top: 60px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+}
